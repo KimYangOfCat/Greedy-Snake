@@ -8,13 +8,8 @@
     box-sizing: border-box;
 }
 body{
-    //全局设置居中
+    //全局设置字体
     font: bold 20px "Courier";
-    //让游戏容器水平垂直居中
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #main{
@@ -22,14 +17,15 @@ body{
     width: 360px;
     height: 420px;
     background-color: @bg-color;
+    
     // 水平居中
     // margin: 100px auto;
 
-    // //水平垂直居中
-    position: relative;
-    // top: 50%;
-    // left:50%;
-    // transform: translate(-50%,-50%);
+    //水平垂直居中
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 
     // 边框
     border:10px solid black;
@@ -47,6 +43,8 @@ body{
     width: 304px;
     height: 304px;
     border:2px solid black;
+
+    position: relative;
 }
 #score-panel{
     width: 300px;
