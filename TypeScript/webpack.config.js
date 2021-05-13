@@ -20,12 +20,12 @@ module.exports = {
         // 告诉webpack不使用箭头
         environment: {
             arrowFunction: false,
-            // 不使用const,此时兼容IE 10
+            // 不使用 const,此时兼容IE 10
             const: false
         }
     },
 
-    // 指定webpack打包时要使用模块
+    // 指定 webpack 打包时要使用模块
     module: {
         // 指定要加载的规则
         rules: [
@@ -111,6 +111,6 @@ module.exports = {
     // 用来设置引用模块
     resolve: {
         extensions: ['.ts', '.js']
-    }
-
+    },
+    mode: "development"
 };
